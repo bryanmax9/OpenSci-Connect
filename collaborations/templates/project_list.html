@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="projects-section">
+  <h2>List of Projects</h2>
+  <div class="projects-container">
+    {% for project in projects %}
+    <div class="project-card">
+      <img
+        src="/static/img/AdobeStock_628248257.jpeg"
+        alt="{{ project.title }} Thumbnail"
+        class="project-thumbnail"
+      />
+      <div class="project-details">
+        <a href="{% url 'project_detail' project.id %}" class="project-title">
+          {{ project.title }}
+        </a>
+        <p class="project-description">
+          {{ project.description|truncatewords:20 }}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

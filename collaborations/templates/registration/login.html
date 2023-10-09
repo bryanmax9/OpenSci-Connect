@@ -1,0 +1,57 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    {% load static %}
+    <link
+      rel="icon"
+      href="/static/img/bryanmax9_Nasa_project_logo_stamp_9e39aa90-e8f7-4ad0-b11a-196651b10d35.png"
+    />
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source
+            src="https://drive.google.com/uc?export=download&id=1zsGGIgyeaVYTvoClyp0XZnH2Gx-U_jeq"
+            type="video/mp4"
+          />
+          <source
+            src="https://drive.google.com/uc?export=download&id=1hlLkalc4_LWoxuYMceNZqIGdSrUBPLwR"
+            type="video/webm"
+          />
+          Your browser is not supported for this videos!sorry😥
+        </video>
+      </div>
+      <div class="login-section">
+        <div class="form-box">
+          <h2>Login</h2>
+          <form method="post">
+            {% csrf_token %}
+            <div class="input-box">
+              {{ form.username }}
+              <!-- Assuming 'username' is the name of the field in the form -->
+              <label for="{{ form.username.id_for_label }}">Username</label>
+            </div>
+            <div class="input-box">
+              {{ form.password }}
+              <!-- Assuming 'password' is the name of the field in the form -->
+              <label for="{{ form.password.id_for_label }}">Password</label>
+            </div>
+            <input type="submit" class="btn" value="Login" />
+          </form>
+          <div class="group-section">
+            <p>Don't have an account? Sign up <a href="{% url 'signup' %}">here</a> </p>
+            <p><a href="{% url 'home' %}">Back to Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

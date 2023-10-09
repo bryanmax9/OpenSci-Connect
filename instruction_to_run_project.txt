@@ -1,0 +1,37 @@
+1.use command:
+  pip install django
+2. use command:
+  pip install scikit-learn
+3. finally use:
+  python manage.py runserver
+
+
+-----------------
+commmand to work with an ip, we need to make request then we will need to use:
+  pip install requests
+
+------------
+In order to create a User
+
+use command to create super user account:
+  python manage.py createsuperuser
+
+Go to the path "/admin"
+
+
+
+-------------------------------------------------------------------
+to push to you branch use this commands:
+
+git add . 
+git commit -m "writte something"
+git push origin "name of branch"
+
+(psdt: everytime you push, after that use "git checkout main" in order to get your files back)
+
+now to pull changes from a branch:
+
+git pull origin branch_name
+e.g, git pull origin front-end
+
+
