@@ -62,6 +62,21 @@ Pulling changes from a branch:
  git pull origin branch_name
 ```
 
+## PROJECT SNAPSHOTS PREVIEW 
+
+* Hero Section:
+<img src="https://i.imgur.com/DbNtbfI.png" alt="heroSection" width="50%" height="50%">
+
+* User Profile:
+<img src="https://i.imgur.com/YV6BcZQ.png" alt="userProfile" width="50%" height="50%">
+
+* Available Projects:
+<img src="https://i.imgur.com/eNPgUvp.png" alt="userProfile" width="50%" height="50%">
+
+* Robber Mars Pictures Collage (NASA API):
+<img src="https://i.imgur.com/hAVinYd.png" alt="userProfile" width="50%" height="50%">
+
+
 ## 🌠 Project Highlights
 
 - Web-based Solution: Developed using the Django template, our platform is user-friendly, allowing easy account setups, skill-project matching, and integrated messaging.
