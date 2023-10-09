@@ -86,7 +86,7 @@ Pulling changes from a branch:
 
 ## 🎥 Video Presentation
 
-link =
+link = https://youtu.be/95eyJWVnZ-8
 
 ## 🔗 Links & Resources
 
